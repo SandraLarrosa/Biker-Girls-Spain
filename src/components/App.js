@@ -1,11 +1,12 @@
 import React from 'react';
 import '../stylesheets/App.scss';
+import UnderConstruction from './UnderConstruction';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hola Mundo</h1>
-    </div>
+    <>
+      <UnderConstruction />
+    </>
   );
 }
 
