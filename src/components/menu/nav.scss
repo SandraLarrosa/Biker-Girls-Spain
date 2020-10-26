@@ -25,5 +25,25 @@
 
 
 .navDesktop {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    background-color: #00555a;
+    color: white;
+    font-size: 14px;
+    width: 140px;
+
+    @media all and (min-width:768px){
+      width: 180px;
+      font-size: 18px;
+    }
+
 }
+
+.listMenu {
+  padding: 10px;
+  border-top: 1px solid white;
+}
+
+.hidden {
+  display: none;
+} 
