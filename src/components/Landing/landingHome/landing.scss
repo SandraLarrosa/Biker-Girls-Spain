@@ -50,7 +50,12 @@
 .landingLogo {
   width: 300px;
   margin: 30px;
+  cursor: pointer;
   animation: bounce-in-left 1.1s both;
+
+  &:hover{
+    animation: bounce-out-right 1.5s both;
+  }
 
   @media all and (min-width: 768px) {
     width: 500px;
@@ -66,6 +71,19 @@
   width: 40px;
   align-self: center;
   transform: rotate(180deg);
+  transition: 0.3s;
+  margin-bottom: 20px;
+
+  &:hover{
+    animation-name: hvr-icon-hang;
+    animation-duration: .3s, 1.5s;
+    animation-delay: 0s, .3s;
+    animation-timing-function: ease-out, ease-in-out;
+    animation-iteration-count: 1, infinite;
+    animation-fill-mode: forwards;
+    animation-direction: normal, alternate;
+  }
+
 
   @media all and (min-width: 768px) {
     width: 60px;
@@ -117,3 +135,46 @@
     opacity: 1;
   }
 }
+
+@keyframes bounce-out-right {
+    0% {
+      transform: translateX(0);
+      animation-timing-function: ease-out;
+    }
+    5% {
+      transform: translateX(30px);
+      animation-timing-function: ease-in;
+    }
+    15% {
+      transform: translateX(0);
+      animation-timing-function: ease-out;
+    }
+    25% {
+      transform: translateX(38px);
+      animation-timing-function: ease-in;
+    }
+
+    38% {
+      transform: translateX(0) rotate(-40deg);
+      animation-timing-function: ease-out;
+    }
+    85% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(600px) rotate(-40deg);
+      opacity: 0;
+    }
+  }
+
+@keyframes hvr-icon-hang {
+    0% {
+      transform: translateY(6px) rotate(180deg);
+    }
+    50% {
+      transform: translateY(2px) rotate(180deg);
+    }
+    100% {
+      transform: translateY(6px) rotate(180deg);
+    }
+  }
