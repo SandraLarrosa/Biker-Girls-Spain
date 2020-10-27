@@ -1,8 +1,12 @@
-.contentMenu{
+.contentMenu {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   width: 100%;
+
+  @media all and (min-width: 1200px) {
+    flex-direction: row;
+  }
 }
 
 .contentIconMenu {
@@ -13,9 +17,13 @@
   justify-content: center;
   align-items: center;
 
-  @media all and (min-width:768px){
+  @media all and (min-width: 768px) {
     width: 80px;
     height: 80px;
+  }
+
+  @media all and (min-width: 1200px) {
+    display: none;
   }
 }
 
@@ -24,33 +32,59 @@
   height: 50px;
   cursor: pointer;
 
-  @media all and (min-width:768px){
+  @media all and (min-width: 768px) {
     width: 70px;
     height: 70px;
   }
 }
 
-
 .navDesktop {
-    display: flex;
-    flex-direction: column;
-    background-color: #00555a;
-    color: white;
-    font-size: 14px;
-    width: 140px;
+  display: flex;
+  flex-direction: column;
+  background-color: #00555a;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  width: 140px;
 
-    @media all and (min-width:768px){
-      width: 180px;
-      font-size: 18px;
-    }
+  @media all and (min-width: 768px) {
+    width: 180px;
+    font-size: 18px;
+  }
 
+  @media all and (min-width: 1200px) {
+    width: 100%;
+    font-size: 20px;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .listMenu {
+  cursor: pointer;
   padding: 10px;
   border-top: 1px solid white;
+  transition: ease-in-out 0.5s;
+  color: #ffc8df;
+
+  @media all and (min-width: 1200px) {
+    border-top: 0px;
+    padding: 20px;
+
+    &:hover{
+      color: white;
+      background-color: #017b81;
+      border-radius: 10px;
+    }
+  }
+
 }
 
 .hidden {
   display: none;
-} 
+
+  @media all and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
