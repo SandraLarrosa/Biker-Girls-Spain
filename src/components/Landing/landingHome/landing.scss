@@ -1,78 +1,119 @@
 .landingHome {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    background: url('./images/fondo-desktop.png') no-repeat center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: url('./images/fondo-desktop.png') no-repeat center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .contentLandingTitle {
-    margin-top: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    @media all and (min-width: 768px){
-        margin-top: 150px;
+  @media all and (min-width: 768px) {
+    margin-top: 150px;
+  }
+
+  @media all and (min-width: 1200px) {
+    margin-top: 120px;
+  }
+
+  & .landingTitle {
+    font-size: 34px;
+    animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+
+    @media all and (min-width: 768px) {
+      font-size: 42px;
     }
 
-    @media all and (min-width: 1200px){
-        margin-top: 120px;
+    @media all and (min-width: 768px) {
+      font-size: 46px;
     }
+  }
 
+  & .landingAdictas {
+    font-size: 22px;
+    animation: text-shadow-drop-center 1.3s both;
 
-    & .landingTitle{
-        font-size: 34px;
-
-        
-    @media all and (min-width: 768px){
-        font-size: 42px;
+    @media all and (min-width: 768px) {
+      font-size: 32px;
     }
-
-    @media all and (min-width: 768px){
-        font-size: 46px;
-    }
-
-    }
-
-    & .landingAdictas{
-        font-size: 22px;
-
-        @media all and (min-width: 768px){
-            font-size: 32px;
-        }
-    }
+  }
 }
 
-.landingLogo{
-    width: 300px;
-    margin: 30px;
+.landingLogo {
+  width: 300px;
+  margin: 30px;
+  animation: bounce-in-left 1.1s both;
 
-    @media all and (min-width: 768px){
-        width: 500px;
-    }
+  @media all and (min-width: 768px) {
+    width: 500px;
+  }
 
-    @media all and (min-width: 1200px){
-        width: 600px;
-    }
+  @media all and (min-width: 1200px) {
+    width: 600px;
+  }
 }
 
-.contentLogoSign{
-    cursor: pointer;
-    width: 40px;
-    align-self: center;
-    transform: rotate(180deg);
+.contentLogoSign {
+  cursor: pointer;
+  width: 40px;
+  align-self: center;
+  transform: rotate(180deg);
 
-    @media all and (min-width: 768px){
-        width: 60px;
-    }
+  @media all and (min-width: 768px) {
+    width: 60px;
+  }
 
-    
-    @media all and (min-width: 1200px){
-        width: 70px;
-    }
+  @media all and (min-width: 1200px) {
+    width: 70px;
+  }
+}
+
+/* ANIMATIONS */
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes text-shadow-drop-center {
+  0% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    text-shadow: 0 0 3px #00555a;
+  }
+}
+
+@keyframes bounce-in-left {
+  0% {
+    transform: translateX(-600px) rotate(-40deg);
+    animation-timing-function: ease-in;
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translateX(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
 }
