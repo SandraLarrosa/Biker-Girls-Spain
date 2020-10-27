@@ -7,11 +7,16 @@ const Nav = () => {
   const [showMenu, setShowMenu] = useState('hidden');
 
     const showMenuNav = () => {
-        setShowMenu('')
+        if (showMenu === 'hidden') {
+            setShowMenu('')
+        } else if (showMenu === '') {
+            setShowMenu('hidden')
+        }
+        
     }
 
     return (
-        <>
+        <div className='contentMenu'>
         <div className='contentIconMenu'>
                 <img src={iconMenu} alt="Menú Navegación" className='iconMenu' onClick={showMenuNav}/>
         </div>
@@ -35,7 +40,7 @@ const Nav = () => {
                     Login
                 </li>
             </nav>
-        </>
+        </div>
     );
 };
 
