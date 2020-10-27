@@ -4,4 +4,27 @@
     height: 100vh;
     background: url('./images/fondo-desktop.png') no-repeat center;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contentLandingTitle {
+    margin-top: 80px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.landingLogo{
+    width: 300px;
+    margin: 30px;
+}
+
+.contentLogoSign{
+    width: 40px;
+    align-self: center;
+    transform: rotate(180deg);
 }
