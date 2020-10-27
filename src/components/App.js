@@ -1,12 +1,11 @@
 import React from 'react';
 import '../stylesheets/App.scss';
-import UnderConstruction from './UnderConstruction';
+import Nav from './menu/Nav.js';
 
 function App() {
   return (
-    <>
-      <UnderConstruction />
-    </>
+    <Nav />
+    
   );
 }
 
