@@ -1,53 +1,70 @@
 .quienesSomos {
-  margin-top: 30px;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
+  margin: auto;
+  margin-top: 30px;
+
 }
 
-.titleQuienesSomos{
-    font-size: 28px;
-    text-align: center;
+.titleQuienesSomos {
+  font-size: 28px;
+  text-align: center;
 }
 
-.contentQuienesSomos{
-    margin: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.contentQuienesSomos {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    @media all and(min-width: 768px){
-        flex-direction: row;
-        margin: 40px;
+  @media all and(min-width: 768px) {
+    flex-direction: row;
+    margin: 40px;
+  }
+
+  @media all and(min-width: 1200px) {
+    margin: 60px;
+  }
+
+  & .imageQuienesSomos {
+    width: 200px;
+    margin-bottom: 20px;
+
+    @media all and(min-width: 768px) {
+      width: 300px;
+      margin-bottom: 0px;
+      margin-left: 20px;
+      margin-right: 20px;
     }
 
-    & .imageQuienesSomos{
-        width: 200px;
-        margin-bottom: 20px;
+    @media all and(min-width: 1200px) {
+        width: 400px;
+      }
+  }
 
-        @media all and(min-width: 768px){
-            width: 300px;
-            margin-bottom: 0px;
-            margin-left: 20px;
-            margin-right: 20px;
-        }
+  & .textQuienesSomos {
+    font-size: 12px;
+    padding: 5px;
+
+    @media all and(min-width: 768px) {
+      font-size: 16px;
+      padding: 15px;
     }
+    
+    @media all and(min-width: 1200px) {
+        font-size: 18px;
+        width: 500px;
+        padding: 20px;
 
-    & .textQuienesSomos{
-        font-size: 12px;
-        padding: 5px;
-
-        @media all and(min-width: 768px){
-            font-size: 16px;
-            padding: 15px;
-        }
-    }
+      }
+  }
 }
-
 
 .contentReverse {
-    @media all and(min-width: 768px){
-        flex-direction: row-reverse;
-        margin: 40px;
-    }
+  @media all and(min-width: 768px) {
+    flex-direction: row-reverse;
+    margin: 40px;
+  }
 }
