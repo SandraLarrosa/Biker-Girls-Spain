@@ -37,6 +37,9 @@ const Nav = () => {
                     Store
                 </li>
                 <li className='listMenu'>
+                    Contacto
+                </li>
+                <li className='listMenu'>
                     Login
                 </li>
             </nav>
