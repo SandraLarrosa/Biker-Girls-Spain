@@ -18,8 +18,21 @@
     width: 50px;
     cursor: pointer;
     margin: 5px;
+    transition-duration: 0.3s;
+    transition-property: transform;
+
+    &:hover{
+        transform: scale(1.1);
+    }
+
+    @media all and(min-width: 768px){
+        width: 70px;
+    }
+
 }
 
 .copyFooter{
+    font-size: 18px;
     color: white;
+    margin-bottom: 10px;
 }
