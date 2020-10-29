@@ -1,6 +1,14 @@
 import React from 'react';
 import './quienesSomos.scss';
+
+
+/* FOTOS */
 import foto from './images/madrid.png';
+import foto1 from './images/downmadrid.JPG';
+import foto2 from './images/BGS-comunidadValenciana.jpeg';
+import foto3 from './images/bgs-bcn.jpg';
+import foto4 from './images/IMG_2042.jpg';
+import foto5 from './images/IMG_2052.jpg';
 
 
 const QuienesSomos = () => {
