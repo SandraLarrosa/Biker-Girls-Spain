@@ -1,30 +1,37 @@
 import React from 'react';
+import Post from './Post';
 
 
 const LastPost = (props) => {
-    console.log(props.dataMedia);
 
+    let printLastPost;
 
-    const printLastPosts = () => {
-    if (props === undefined) {
+    if (props.dataMedia === undefined) {
         return (
             <h4>Cargando...</h4>
         )
     } else {
-        props.dataMedia.map((lastPost) => {
-             console.log(lastPost);
+        printLastPost = props.dataMedia.map((post) => {
             return (
-                <p>{lastPost.caption}</p>
+                <li key={post.id}>
+                    <Post
+                        image={post.displayImage}
+                        comments={post.commentsNumber}
+                        likes={post.likes}
+                        text={post.caption}
+                        linkPost={post.postLink}
+                    />
+                </li>
             )
-        })
-        }
+         }) 
     }
-
     return (
-        <div>
-            {printLastPosts}
-        </div>
-    );
+        <>
+            <ul>
+                {printLastPost}
+            </ul>
+        </>
+    )
 };
 
 

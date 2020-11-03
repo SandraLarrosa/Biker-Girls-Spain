@@ -9,9 +9,9 @@ import LastPost from './LastPost';
 const Instagram = (props) => {
     
     useEffect(() => {
-        console.log(props);
+        
     }, [])
-    console.log(props);
+    
 
     return (
         <>

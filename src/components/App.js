@@ -12,7 +12,7 @@ function App() {
       <Nav />
       <Landing />
       <QuienesSomos />
-      <Instagram account='bikergirls_spain' numberOfMediaElements={4}/>
+      <Instagram account='bikergirls_spain' numberOfMediaElements={8}/>
       <Footer /> 
     </>
   );
