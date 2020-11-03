@@ -1,0 +1,49 @@
+.cardPost{
+    width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: white;
+    margin-bottom: 20px;
+
+}
+
+.content{
+    position: relative;
+    display: flex;
+}
+
+.cardPost__image{
+    position: absolute;
+    width: 300px;
+    height: 245px;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+
+    &:hover{
+        opacity: 0;
+    }
+}
+
+.cardPost__text{
+    padding: 15px;
+    width: 300px;
+    height: 245px;
+    font-size: 12px;
+    color: black;
+    background-color: rgb(231, 255, 252);
+    align-content: center;
+    opacity: 1;
+} 
+
+.cardPost__contentSocial{
+    margin-top: 5px;
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
