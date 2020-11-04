@@ -1,5 +1,6 @@
 import React from 'react';
 import Post from './Post';
+import { Roller } from 'react-css-spinners'
 
 
 const LastPost = ({dataAccount, dataMedia}) => {
@@ -8,7 +9,7 @@ const LastPost = ({dataAccount, dataMedia}) => {
 
     if (dataMedia === undefined) {
         return (
-            <h4>Cargando...</h4>
+            <Roller color='#00555A' className='spinner'/>
         )
     } else {
         printLastPost = dataMedia.map((post) => {
