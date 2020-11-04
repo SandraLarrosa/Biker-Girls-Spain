@@ -1,0 +1,76 @@
+.sectionInstagram{
+    background-color: rgb(253, 226, 230);
+
+
+    &__title{
+        font-size: 28px;
+        padding-top: 30px;
+        text-align: center;
+    }
+}
+
+
+
+.headerInstagramAccount{
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.671);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.274);
+    padding: 15px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    transition: ease-in-out 0.3s;
+
+    &:hover{
+        box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.527);
+        background-color: #ccf3f56e;
+    }
+}
+
+.contentInfoInstagramAccount{
+    display: flex;
+    align-items: center;
+
+    &__image{
+        width: 60px;
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+
+    &__account{
+        color:#00555A;
+        font-size: 20px;
+    }
+}
+
+.contentFollowersInstagramAccount{
+    color: black;
+    display: flex;
+    margin-top: 12px;
+
+    &__follows{
+        padding-right: 10px;
+    }
+}
+
+.titleLastPost{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.listLastPost{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    @media all and(min-width: 768px){
+        flex-direction: row;
+    }
+}

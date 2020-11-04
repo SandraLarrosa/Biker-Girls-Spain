@@ -1,0 +1,70 @@
+.cardPost{
+    width: 350px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    /* background-color: rgba(255, 255, 255, 0.692); */
+    margin-bottom: 10px;
+    border-radius: 20px;
+    /* box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.521); */
+
+}
+
+.content{
+    position: relative;
+    display: flex;
+}
+
+.cardPost__image{
+    border-radius: 10px;
+    position: absolute;
+    width: 300px;
+    height: 245px;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.274);
+
+    &:hover{
+        opacity: 0;
+    }
+}
+
+.cardPost__text{
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+    height: 245px;
+    font-size: 12px;
+    font-weight: 600;
+    color: black;
+    background-color: #ffffffa6;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.274);
+    align-content: center;
+    opacity: 1;
+} 
+
+.cardPost__contentSocial{
+    margin-top: 15px;
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    color: #00555A;
+}
+
+.far{
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+}
+
+.fa-comment:hover{
+    color: rgb(0, 52, 221);
+
+}
+
+.fa-heart:hover{
+    color: red;
+}
