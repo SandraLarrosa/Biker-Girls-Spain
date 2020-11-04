@@ -13,11 +13,11 @@ const Post = ({image, comments, likes, text, linkPost}) => {
             </div>
             <div className='cardPost__contentSocial'>
                 <div>
-                    <i class="far fa-comment"></i>
+                    <i className="far fa-comment"></i>
                     <p>{comments}</p>
                 </div>
                 <div>
-                    <i class="far fa-heart"></i>
+                    <i className="far fa-heart"></i>
                     <p>{likes}</p>
                 </div>
             </div>

@@ -1,3 +1,41 @@
-.widgetInstagram{
+.sectionInstagram{
     background-color: rgb(253, 226, 230);
+
+    &__title{
+        font-size: 28px;
+        padding-top: 30px;
+        text-align: center;
+    }
+}
+
+
+
+.headerInstagramAccount{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+.contentInfoInstagramAccount{
+    display: flex;
+    align-items: center;
+
+    &__image{
+        width: 60px;
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+
+    &__account{
+        color:#00555A;
+    }
+}
+
+.contentFollowersInstagramAccount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
 }

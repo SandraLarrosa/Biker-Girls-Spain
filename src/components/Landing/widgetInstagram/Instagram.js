@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import withInstagramFeed from 'origen-react-instagram-feed';
 import './instagram.scss';
 import LastPost from './LastPost';
@@ -7,21 +7,11 @@ import LastPost from './LastPost';
 
 
 const Instagram = (props) => {
-    
-    useEffect(() => {
-        
-    }, [])
-    
-
     return (
         <>
-            <section className='widgetInstagram'>
-                <h2>Instagram</h2>
-                <h3>{`@${props.accountName}`}</h3>
-                <img src={props.profilePic}/>
-                <h4>Followed</h4>
-                <p>{props.accountFollowedBy}</p>
-                <LastPost dataMedia={props.media}/>
+            <section className='sectionInstagram'>
+                <h2 className='sectionInstagram__title'>Instagram</h2>
+                <LastPost dataAccount={props} dataMedia={props.media}/>
             </section>
         </>
     );

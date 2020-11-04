@@ -2,16 +2,16 @@ import React from 'react';
 import Post from './Post';
 
 
-const LastPost = (props) => {
-
+const LastPost = ({dataAccount, dataMedia}) => {
+    console.log(dataMedia, dataAccount);
     let printLastPost;
 
-    if (props.dataMedia === undefined) {
+    if (dataMedia === undefined) {
         return (
             <h4>Cargando...</h4>
         )
     } else {
-        printLastPost = props.dataMedia.map((post) => {
+        printLastPost = dataMedia.map((post) => {
             return (
                 <li key={post.id}>
                     <Post
@@ -27,6 +27,16 @@ const LastPost = (props) => {
     }
     return (
         <>
+            <div className='headerInstagramAccount'>
+                <div className='contentInfoInstagramAccount'>
+                    <img className='contentInfoInstagramAccount__image'src={dataAccount.profilePic} alt='Imagen perfil instagram'/>
+                    <h3 className='contentInfoInstagramAccount__account'>{`@${dataAccount.accountName}`}</h3>
+                </div>
+                <div className='contentFollowersInstagramAccount'>
+                    <h4 className='contentFollowersInstagramAccount__follows'>Seguidores:</h4>
+                    <p className='contentFollowersInstagramAccount__dataFollows'>{dataAccount.accountFollowedBy}</p>
+                </div>
+            </div>
             <ul>
                 {printLastPost}
             </ul>
