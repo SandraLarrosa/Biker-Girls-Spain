@@ -37,6 +37,7 @@ const LastPost = ({dataAccount, dataMedia}) => {
                     <p className='contentFollowersInstagramAccount__dataFollows'>{dataAccount.accountFollowedBy}</p>
                 </div>
             </div>
+            <h3 className='titleLastPost'>Últimas Publicaciones</h3>
             <ul>
                 {printLastPost}
             </ul>
