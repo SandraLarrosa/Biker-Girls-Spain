@@ -27,18 +27,20 @@ const LastPost = ({dataAccount, dataMedia}) => {
     }
     return (
         <>
-            <div className='headerInstagramAccount'>
-                <div className='contentInfoInstagramAccount'>
-                    <img className='contentInfoInstagramAccount__image'src={dataAccount.profilePic} alt='Imagen perfil instagram'/>
-                    <h3 className='contentInfoInstagramAccount__account'>{`@${dataAccount.accountName}`}</h3>
+            <a href='https://www.instagram.com/bikergirls_spain/?hl=es' target='_blank' rel="noopener noreferrer">
+                <div className='headerInstagramAccount'>
+                    <div className='contentInfoInstagramAccount'>
+                        <img className='contentInfoInstagramAccount__image'src={dataAccount.profilePic} alt='Imagen perfil instagram'/>
+                        <h3 className='contentInfoInstagramAccount__account'>{`@${dataAccount.accountName}`}</h3>
+                    </div>
+                    <div className='contentFollowersInstagramAccount'>
+                        <h4 className='contentFollowersInstagramAccount__follows'>Seguidores:</h4>
+                        <p className='contentFollowersInstagramAccount__dataFollows'>{dataAccount.accountFollowedBy}</p>
+                    </div>
                 </div>
-                <div className='contentFollowersInstagramAccount'>
-                    <h4 className='contentFollowersInstagramAccount__follows'>Seguidores:</h4>
-                    <p className='contentFollowersInstagramAccount__dataFollows'>{dataAccount.accountFollowedBy}</p>
-                </div>
-            </div>
+            </a>
             <h3 className='titleLastPost'>Últimas Publicaciones</h3>
-            <ul>
+            <ul className='listLastPost'>
                 {printLastPost}
             </ul>
         </>
