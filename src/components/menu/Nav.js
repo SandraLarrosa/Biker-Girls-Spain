@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {BrowserRouter, Link } from 'react-router-dom';
 import './nav.scss';
 import iconMenu from './images/icons8_menu_48px_1.png';
 
@@ -20,10 +21,13 @@ const Nav = () => {
         <div className='contentIconMenu'>
                 <img src={iconMenu} alt="Menú Navegación" className='iconMenu' onClick={showMenuNav}/>
         </div>
-        <nav className={`navDesktop ${showMenu}`}>
-                <li className='listMenu'>
-                    ¿Quiénes somos?
-                </li>
+            <nav className={`navDesktop ${showMenu}`}>
+            <BrowserRouter>
+                <Link to='/'>
+                    <li className='listMenu'>
+                            ¿Quiénes somos?
+                    </li>
+                </Link>
                 <li className='listMenu'>
                     Rutas & Eventos
                 </li>
@@ -40,8 +44,9 @@ const Nav = () => {
                     Contacto
                 </li>
                 <li className='listMenu'>
-                    Login
+                        Login
                 </li>
+            </BrowserRouter>
             </nav>
         </div>
     );
