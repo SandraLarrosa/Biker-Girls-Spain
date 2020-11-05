@@ -22,13 +22,45 @@
     margin-top: 170px;
     border-radius: 10px;
 
+    @media all and(min-width: 768px){
+        width: 300px;
+        height: 300px;
+        padding: 20px;
+        margin-top: 250px;
+    }
+
+    @media all and(min-width: 1200px){
+        width: 400px;
+        height: 350px;
+        padding: 30px;
+        margin-top: 180px;
+    }
+
     &__title{
         font-size: 28px;
         margin-bottom: 15px;
+
+        @media all and(min-width: 768px){
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        @media all and(min-width: 1200px){
+            font-size: 40px;
+            margin-bottom: 35px;
+        }
     }
 
     &__text{
         font-size: 12px;
+
+        @media all and(min-width: 768px){
+            font-size: 14px;
+        }
+
+        @media all and(min-width: 1200px){
+            font-size: 18px;
+        }
     }
 }
 
@@ -38,6 +70,11 @@
     transform: rotate(180deg);
     transition: 0.3s;
     margin-bottom: 20px;
+
+    @media all and(min-width: 768px){
+        width: 60px;
+    }
+    
   
     &:hover{
       animation-name: hvr-icon-hang;
