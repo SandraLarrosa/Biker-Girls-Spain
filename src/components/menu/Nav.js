@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {BrowserRouter, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './nav.scss';
 import iconMenu from './images/icons8_menu_48px_1.png';
 
@@ -22,15 +22,16 @@ const Nav = () => {
                 <img src={iconMenu} alt="Menú Navegación" className='iconMenu' onClick={showMenuNav}/>
         </div>
             <nav className={`navDesktop ${showMenu}`}>
-            <BrowserRouter>
                 <Link to='/'>
                     <li className='listMenu'>
                             ¿Quiénes somos?
                     </li>
+                    </Link>
+                <Link to='/rutasyeventos'>
+                    <li className='listMenu'>
+                                Rutas & Eventos
+                    </li>
                 </Link>
-                <li className='listMenu'>
-                    Rutas & Eventos
-                </li>
                 <li className='listMenu'>
                     Colaboradores
                 </li>
@@ -46,7 +47,6 @@ const Nav = () => {
                 <li className='listMenu'>
                         Login
                 </li>
-            </BrowserRouter>
             </nav>
         </div>
     );
