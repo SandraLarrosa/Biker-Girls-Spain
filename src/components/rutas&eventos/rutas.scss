@@ -1,5 +1,65 @@
 .sectionRutas{
     width: 100%;
     height: 100vh;
-    background-color: rgb(186, 245, 194);
+    background: url('./images/downmadrid.JPG') no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.containTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    background-color: #00565abb;
+    color: white;
+    padding: 15px;
+    margin-top: 170px;
+    border-radius: 10px;
+
+    &__title{
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    &__text{
+        font-size: 12px;
+    }
+}
+
+.imageSignCurvy{
+    cursor: pointer;
+    width: 40px;
+    transform: rotate(180deg);
+    transition: 0.3s;
+    margin-bottom: 20px;
+  
+    &:hover{
+      animation-name: hvr-icon-hang;
+      animation-duration: .3s, 1.5s;
+      animation-delay: 0s, .3s;
+      animation-timing-function: ease-out, ease-in-out;
+      animation-iteration-count: 1, infinite;
+      animation-fill-mode: forwards;
+      animation-direction: normal, alternate;
+    }
+}
+
+/* ANIMACIONES */
+
+@keyframes hvr-icon-hang {
+    0% {
+      transform: translateY(6px) rotate(180deg);
+    }
+    50% {
+      transform: translateY(2px) rotate(180deg);
+    }
+    100% {
+      transform: translateY(6px) rotate(180deg);
+    }
+  }
