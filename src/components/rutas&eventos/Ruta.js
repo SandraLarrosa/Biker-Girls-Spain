@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Ruta = ({ comunity, title, date, image, text}) => {
+const Ruta = ({ comunity, title, date, image, text, type}) => {
     return (
         <article>
             <h3>{comunity}</h3>

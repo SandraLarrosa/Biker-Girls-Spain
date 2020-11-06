@@ -22,6 +22,7 @@ const ListRutas = ({ dataRoutes }) => {
                         date={route.date}
                         image={route.image}
                         text={route.text}
+                        type={route.type}
                     />
                 </li>
             )
