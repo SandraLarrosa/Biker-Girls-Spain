@@ -1,7 +1,7 @@
 import React from 'react';
 import { Roller } from 'react-css-spinners'
 import Ruta from './Ruta';
-
+import './listRutas.scss';
 
 const ListRutas = ({ dataRoutes }) => {
     console.log(dataRoutes);
@@ -31,8 +31,8 @@ const ListRutas = ({ dataRoutes }) => {
 
     return (
         <section className='sectionListRutas'>
-            <h2>Nuestras últimas Rutas y Eventos</h2>
-            <ul>
+            <h2 className='sectionListRutas__title'>Nuestras últimas Rutas y Eventos</h2>
+            <ul className='contentRoutes'>
                 {data}
             </ul>
         </section>

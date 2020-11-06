@@ -1,13 +1,26 @@
 import React from 'react';
 
-const Ruta = ({ comunity, title, date, image, text, type}) => {
+const Ruta = ({ comunity, title, date, image, text, type }) => {
+
+    const changeBackgroundColorCard = (type) => {
+        if (type === 'Ruta') {
+            return 'background--Pink';
+        } else if (type === 'Evento') {
+            return 'background--Blue';
+        }
+
+        return "";
+    }
+    
+    let backgroundColor = changeBackgroundColorCard(type);
+
     return (
-        <article>
-            <h3>{comunity}</h3>
-            <h4>{title}</h4>
-            <p>{date}</p>
-            <img src={image} />
-            <p>{text}</p>
+        <article className={`cardRoute ${backgroundColor}`}>
+            <h3 className='cardRoute__comunity'>{comunity}</h3>
+            <h4 className='cardRoute__title'>{title}</h4>
+            <p className='cardRoute__date'>{date}</p>
+            <img className='cardRoute__image' src={image} />
+            <p className='cardRoute__text'>{text}</p>
         </article>
     );
 };

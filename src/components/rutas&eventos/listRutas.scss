@@ -1,0 +1,64 @@
+.sectionListRutas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__title{
+        margin-top: 30px;
+    }
+}
+
+.contentRoutes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+
+.cardRoute{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 300px;
+    height: 600px;
+
+    &__comunity{
+        font-size: 20px;
+        color: #3D0042;
+        padding: 10px;
+    }
+
+    &__title{
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    &__date{
+        font-size: 14px;
+        color: #00555A;
+        padding: 5px;
+    }
+
+    &__image{
+        width: 240px;
+        height: 175px;
+    }
+
+    &__text{
+        font-size: 12px;
+        padding: 20px;
+    }
+}
+
+.background--Pink{
+    background-color: #F0E2F1;
+}
+
+.background--Blue{
+    background-color: #E3F2F3;
+}
