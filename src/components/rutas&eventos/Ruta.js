@@ -19,7 +19,7 @@ const Ruta = ({ comunity, title, date, image, text, type }) => {
             <h3 className='cardRoute__comunity'>{comunity}</h3>
             <h4 className='cardRoute__title'>{title}</h4>
             <p className='cardRoute__date'>{date}</p>
-            <img className='cardRoute__image' src={image} />
+            <img className='cardRoute__image' src={image} alt='Foto de ruta' />
             <p className='cardRoute__text'>{text}</p>
         </article>
     );
