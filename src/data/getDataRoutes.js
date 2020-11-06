@@ -1,4 +1,4 @@
-const endpoint = './rutas.json';
+const endpoint = 'https://raw.githubusercontent.com/SandraLarrosa/Biker-Girls-Spain/rutas/src/data/rutas.json';
 
 
 const getDataRoutes = () => {
