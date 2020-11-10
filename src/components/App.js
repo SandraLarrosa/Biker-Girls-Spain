@@ -5,6 +5,7 @@ import Nav from './menu/Nav.js';
 import Landing from './Landing/landingHome/Landing';
 import Rutas from './rutas&eventos/Rutas';
 import Footer from './footer/Footer';
+import Colaboradores from './colaboradores/Colaboradores';
 
 
 
@@ -16,6 +17,7 @@ function App() {
         <Switch>
           <Route exact path='/' component={Landing} /> 
           <Route exact path='/rutasyeventos' component={Rutas} /> 
+          <Route exact path='/colaboradores' component={Colaboradores} /> 
         </Switch>
       <Footer /> 
     </div>
