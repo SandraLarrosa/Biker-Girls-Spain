@@ -32,9 +32,11 @@ const Nav = () => {
                                 Rutas & Eventos
                     </li>
                 </Link>
-                <li className='listMenu'>
-                    Colaboradores
-                </li>
+                <Link to='/colaboradores'>
+                    <li className='listMenu'>
+                            Colaboradores
+                    </li>
+                </Link>
                 <li className='listMenu'>
                     Blog
                 </li>
