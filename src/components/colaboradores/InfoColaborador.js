@@ -1,10 +1,12 @@
 import React from 'react';
 
 
-const InfoColaborador = ({image, name, info, web, link}) => {
+const InfoColaborador = ({image, name, info, web, link, right}) => {
     return (
-        <li className='cardColaboradores'>
-            <img className='cardColaboradores__image' src={image} alt={`logo de ${name}`}/>
+        <li className={`cardColaboradores ${right}`}>
+            <div className='contentImageColaboradores'>
+                <img className='contentImageColaboradores__image' src={image} alt={`logo de ${name}`} />
+            </div>
             <div className='cardColaboradores__contentInfo'>
                 <h3 className='nameColaboradores'>{name}</h3>
                 <p className='infoColaboradores'>{info}</p>

@@ -5,6 +5,8 @@ import logoExclusive from './images/exclusive rider.webp';
 import logoMotorrevive from './images/descarga.webp';
 import logoXlMoto from './images/xlmoto.jpg';
 
+import './colaboradores.scss';
+
 
 
 
@@ -17,9 +19,9 @@ const Colaboradores = () => {
             </div>
             <ul className='contentInfoColaboradores'>
                 <InfoColaborador image={logoBaintex} name='Baintex' info='I am the best flex claws on the humans belly and purr like a lawnmower or lick left leg for ninety minutes, still dirty meow for food, then when human fills food dish, take a few bites of food and continue meowing. Jump on human and sleep on her all night long be long in the bed, purr in the morning and then give a bite to every human around for not waking up request food.' web='www.baintex.com' link='https://www.baintex.com/es/' />
-                <InfoColaborador image={logoExclusive} name='Exclusive Rider' info='I am the best flex claws on the humans belly and purr like a lawnmower or lick left leg for ninety minutes, still dirty meow for food, then when human fills food dish, take a few bites of food and continue meowing. Jump on human and sleep on her all night long be long in the bed, purr in the morning and then give a bite to every human around for not waking up request food.' web='www.exclusiverider.es' link='https://www.exclusiverider.es/' />
+                <InfoColaborador image={logoExclusive} name='Exclusive Rider' info='I am the best flex claws on the humans belly and purr like a lawnmower or lick left leg for ninety minutes, still dirty meow for food, then when human fills food dish, take a few bites of food and continue meowing. Jump on human and sleep on her all night long be long in the bed, purr in the morning and then give a bite to every human around for not waking up request food.' web='www.exclusiverider.es' link='https://www.exclusiverider.es/' right='right' />
                 <InfoColaborador image={logoMotorrevive} name='Motorrevive' info='I am the best flex claws on the humans belly and purr like a lawnmower or lick left leg for ninety minutes, still dirty meow for food, then when human fills food dish, take a few bites of food and continue meowing. Jump on human and sleep on her all night long be long in the bed, purr in the morning and then give a bite to every human around for not waking up request food.' web='www.motorrevive.com' link='https://motorrevive.com/' />
-                <InfoColaborador image={logoXlMoto} name='XL Moto' info='I am the best flex claws on the humans belly and purr like a lawnmower or lick left leg for ninety minutes, still dirty meow for food, then when human fills food dish, take a few bites of food and continue meowing. Jump on human and sleep on her all night long be long in the bed, purr in the morning and then give a bite to every human around for not waking up request food.' web='www.xlmoto.es' link='https://www.xlmoto.es/'/>
+                <InfoColaborador image={logoXlMoto} name='XL Moto' info='I am the best flex claws on the humans belly and purr like a lawnmower or lick left leg for ninety minutes, still dirty meow for food, then when human fills food dish, take a few bites of food and continue meowing. Jump on human and sleep on her all night long be long in the bed, purr in the morning and then give a bite to every human around for not waking up request food.' web='www.xlmoto.es' link='https://www.xlmoto.es/' right='right'/>
             </ul>
         </section>
     );
