@@ -20,14 +20,14 @@ const Login = () => {
                         <label className='formAccess__logo' for="password">
                             <img className='formLogo' src={password} alt='logo password' />
                         </label>
-                        <input className='formAccess__input'  id="password" type="password" name="password" />
+                        <input className='formAccess__input' id="password" type="password" name="password" />
                     </div>
                     <span className='formAccess__forgetPassword'>¿Has olvidado tu contraseña?</span>
                 </div>
                 <div className='formLogin__contentAccess'>
                     <button className='formLoginButtonAccess'>Entrar</button>
                     <p className='formTextRegister'>¿Todavía no estás registrada?</p>
-                    <button className='formLoginButtonRegister'>REGISTRO</button>
+                    <div className='formLoginButtonRegister'>REGISTRO</div>
                 </div>
             </form>
         </section>
