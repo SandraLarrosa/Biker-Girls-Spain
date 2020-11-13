@@ -8,22 +8,28 @@ const Login = () => {
     return (
         <section className='sectionLogin'>
             <img className='sectionLogin__logo'src={logoBGS} alt='Logo Biker Girls' />
-            <div className='formLogin'>
-                <form className='formLogin__form' action='' method=''>
-                    <div>
-                        <label for="mail">
-                            <img src={mail} alt='logo email' />
+            <form className='formLogin' action='' method=''>
+                <div className='formLogin__contentUser'>
+                    <div className='formAccess'>
+                        <label className='formAccess__logo' for="mail">
+                            <img className='formLogo'src={mail} alt='logo email' />
                         </label>
-                        <input id="mail" type="email" name="mail" placeholder='bikergirlspain@gmail.com'/>
-                        <label for="password">
-                            <img src={password} alt='logo password' />
-                        </label>
-                        <input id="password" type="password" name="password" />
+                        <input className='formAccess__input' id="mail" type="email" name="mail" placeholder='bikergirlspain@gmail.com' />
                     </div>
-                    <div></div>
-                </form>
-            </div>
-
+                    <div className='formAccess'>
+                        <label className='formAccess__logo' for="password">
+                            <img className='formLogo' src={password} alt='logo password' />
+                        </label>
+                        <input className='formAccess__input'  id="password" type="password" name="password" />
+                    </div>
+                    <span className='formAccess__forgetPassword'>¿Has olvidado tu contraseña?</span>
+                </div>
+                <div className='formLogin__contentAccess'>
+                    <button className='formLoginButtonAccess'>Entrar</button>
+                    <p className='formTextRegister'>¿Todavía no estás registrada?</p>
+                    <button className='formLoginButtonRegister'>REGISTRO</button>
+                </div>
+            </form>
         </section>
     );
 };
