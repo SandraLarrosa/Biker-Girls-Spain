@@ -25,7 +25,7 @@ const Login = () => {
                     <span className='formAccess__forgetPassword'>¿Has olvidado tu contraseña?</span>
                 </div>
                 <div className='formLogin__contentAccess'>
-                    <button className='formLoginButtonAccess'>Entrar</button>
+                    <button className='formLoginButtonAccess'>ENTRAR</button>
                     <p className='formTextRegister'>¿Todavía no estás registrada?</p>
                     <div className='formLoginButtonRegister'>REGISTRO</div>
                 </div>
