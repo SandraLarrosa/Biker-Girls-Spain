@@ -6,6 +6,7 @@ import Landing from './Landing/landingHome/Landing';
 import Rutas from './rutas&eventos/Rutas';
 import Footer from './footer/Footer';
 import Colaboradores from './colaboradores/Colaboradores';
+import Login from './login/Login';
 
 
 
@@ -18,6 +19,7 @@ function App() {
           <Route exact path='/' component={Landing} /> 
           <Route exact path='/rutasyeventos' component={Rutas} /> 
           <Route exact path='/colaboradores' component={Colaboradores} /> 
+          <Route exact path='/login' component={Login} /> 
         </Switch>
       <Footer /> 
     </div>

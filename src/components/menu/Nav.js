@@ -46,9 +46,11 @@ const Nav = () => {
                 <li className='listMenu'>
                     Contacto
                 </li>
-                <li className='listMenu'>
-                        Login
-                </li>
+                <Link to='/login'>
+                    <li className='listMenu'>
+                            Login
+                    </li>
+                </Link>
             </nav>
         </div>
     );
